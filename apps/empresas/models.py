@@ -6,3 +6,9 @@ class Empresa(models.Model):
 
     def __str__(self):
         return self.nome
+
+class Funcionario(models.Model):
+    nome = models.CharField(max_length=100, help_text='Nome do funcionario')
+
+    def __str__(self):
+        return self.nome
