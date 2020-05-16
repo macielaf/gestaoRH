@@ -19,3 +19,17 @@ class Departamento(models.Model):
 
     def __str__(self):
         return self.nome
+
+class Documento(models.Model):
+    descricao = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.descricao
+
+
+class Registro_Hora_Extra(models.Model):
+    motivo = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.motivo
+
